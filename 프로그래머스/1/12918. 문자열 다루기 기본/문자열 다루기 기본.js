@@ -3,7 +3,7 @@ function solution(str) {
         return false;
     }
     for (let i = 0; i < str.length; i++) {
-        if (Number(str[i]) !== 0 && !Number(str[i])) {
+        if (isNaN(str[i])) {
             return false;
         }
     }
