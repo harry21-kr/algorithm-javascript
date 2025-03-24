@@ -18,7 +18,7 @@ while (1) {
     pointer -= arr.length;
   } else if (pointer < arr.length) {
     answerArr.push(arr[pointer]);
-    arr = arr.filter((v) => v !== arr[pointer]);
+    arr.splice(pointer, 1);
     pointer += +input[1] - 1;
   }
 }
